@@ -1,4 +1,7 @@
-class Boom  extends LivingCreature{
+let LivingCreature = require('./livingCreature')
+let random = require('./random')
+
+module.exports = class Boom  extends LivingCreature{
 
     die() {
         matrix[this.y][this.x] = 0;
